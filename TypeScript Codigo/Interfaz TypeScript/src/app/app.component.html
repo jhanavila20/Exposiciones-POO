@@ -1,0 +1,20 @@
+<div class="reloj-container frame">
+  <h1>Reloj</h1>
+  <div class="time-area">
+    <label>Horas:</label>
+    <input type="text" [value]="reloj.getHoras()" readonly>
+  </div>
+  <div class="time-area">
+    <label>Minutos:</label>
+    <input type="text" [value]="reloj.getMinutos()" readonly>
+  </div>
+  <div class="time-area">
+    <label>Segundos:</label>
+    <input type="text" [value]="reloj.getSegundos()" readonly>
+  </div>
+  <div class="buttons-area">
+    <button (click)="moverSegundero()">Mover Segundero</button>
+    <button (click)="moverMinutero()">Mover Minutero</button>
+    <button (click)="moverHorario()">Mover Horario</button>
+  </div>
+</div>
